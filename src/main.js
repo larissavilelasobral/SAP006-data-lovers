@@ -51,7 +51,7 @@ function showCharacters(characters) {
         <p id="difficulty">Difficulty: ${difficulty}</p>"`
     }
 }
-    showCharacters(objects);
+showCharacters(objects);
 
 document.getElementById("input-search").addEventListener("keyup", function () {
     const textName = document.getElementById("input-search").value.toLowerCase();
