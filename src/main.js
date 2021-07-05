@@ -304,7 +304,7 @@ function showCharacters(allCharacters) {
 }
 showCharacters(allCharacters);
 
-// FUNÇÃO PRA PERSONAGEM POR NOME
+// FUNÇÃO PRA PESQUISAR PERSONAGEM POR NOME
 document.getElementById("input-search").addEventListener("input", function () {
     const textName = document.getElementById("input-search").value.toLowerCase();
     const champions = allFilters.searchCharacter(allCharacters, textName)
