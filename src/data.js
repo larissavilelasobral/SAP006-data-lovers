@@ -1,24 +1,34 @@
-const ordersAbc = {
+const allFilters = {
+searchCharacter: function searchCharacter(data, input){
+  const searchChampion = data.filter(item => item.name.toLowerCase().includes(input))
+  return searchChampion
+},
 orderAZ: function orderAZ(data){
   const resultsAZ = data.sort((a, z) => a.name > z.name ? 1 : -1)
-  return resultsAZ;
+  return resultsAZ
 },
 orderZA: function orderZA(data){
   const resultsZA = data.sort((a, z) => a.name < z.name ? 1 : -1)
   return resultsZA
 },
-filterDifficultyMenor: function filterDifficulty(champions, difficulty){
-  const charactersFilter = champions.filter(function(champion){
-      return champion.info.difficulty <= difficulty;
+filterTag: function filterTag(data,tag){
+  const charactersTags = data.filter(function(item){
+  return item.tags.includes(tag);
   })
-      return charactersFilter
+  return charactersTags
 },
-filterDifficultyMaior: function filterDifficulty(champions, difficulty){
-  const charactersFilter = champions.filter(function(champion){
-      return champion.info.difficulty >= difficulty;
+filterDifficultyMenor: function filterDifficulty(data, difficulty){
+  const charactersFilter = data.filter(function(champion){
+  return champion.info.difficulty <= difficulty;
   })
-      return charactersFilter
+  return charactersFilter
+},
+filterDifficultyMaior: function filterDifficulty(data, difficulty){
+  const charactersFilter = data.filter(function(champion){
+  return champion.info.difficulty >= difficulty;
+  })
+  return charactersFilter
 }
 }
 
-export default ordersAbc
+export default allFilters
