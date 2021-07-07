@@ -135,7 +135,7 @@ nav ul li{
 .icons{
     cursor: pointer;
     width: 8%;
-    padding: 14px;
+    padding: 11px;
 }
 #Assassin{
     width: 10.2%;
@@ -144,7 +144,8 @@ nav ul li{
     width: 8.7%;
 }
 #All{
-    width: 10.1%;
+    width: 14%;
+    padding: 0px;
 }
 #div-difficulty{
     height: 50px;
@@ -182,7 +183,7 @@ nav ul li{
     justify-content: center;
     cursor: pointer;
     height: 40px;
-    width: 12.2%;
+    width: 12.8%;
     background: #1e2328;
     font-family: 'Marcellus SC', serif;
     font-size: 14px;
@@ -264,7 +265,7 @@ button{
 #Z-A{
     position: absolute;
     margin: 19px 0px;
-    width: 5.2%;
+    width: 5.5%;
     justify-content: center;
 }
 #img-select1{
@@ -431,13 +432,10 @@ footer{
      color: white;
  }
 #easy-img{
-    width: 80%;
-}
-#medium-img{
-    width: 80%;
+    width: 70%;
 }
 #hard-img{
-    width: 80%;
+    width: 70%;
 }
 .icons-responsivo{
     display: none;

@@ -112,7 +112,7 @@ header{
 .icons-responsivo{
     display: flex;
     width: 10%;
-    padding: 19px;
+    padding: 15px;
 }
 #slayer1{
     width: 12.8%;
@@ -121,7 +121,8 @@ header{
     width: 11%;
 }
 #all1{
-    width: 12.8%;
+    width: 17%;
+    padding: 0px;
 }
 .container{
     padding: 70px 0px 0px 0px;
