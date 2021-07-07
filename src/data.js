@@ -5,7 +5,7 @@ const allFilters = {
   },
   orderAZ: function (data){
     const resultsAZ = data.sort((a, z) => a.name > z.name ? 1 : -1)
-    return resultsAZ
+    return resultsAZ    
   },
   orderZA: function (data){
     const resultsZA = data.sort((a, z) => a.name < z.name ? 1 : -1)
@@ -30,5 +30,5 @@ const allFilters = {
     return charactersFilter
   }
   }
-  
+
   export default allFilters

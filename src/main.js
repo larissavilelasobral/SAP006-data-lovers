@@ -384,7 +384,7 @@ document.getElementById("all").addEventListener("click", function (){
         showCharacters(filtersCharacters);
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }else{
-        showCharacters(allCharacters);
+        showCharacters(filtersCharacters);
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }
 })
@@ -398,12 +398,13 @@ document.getElementById("easy").addEventListener("click", function(){
     document.getElementById("easy-img").style.padding = "0px 0px 0px 20px"
     document.getElementById("img-select").style.padding = "5px 0px"
     
-    if(filtersCharacters !== allCharacters){
+    if(filtersCharacters == allCharacters){
         const showEasyCharacters = allFilters.filterDifficultyEasy(filtersCharacters, 5, buttonController);    
         showCharacters(showEasyCharacters)
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }else{   
-        showCharacters(allCharacters)
+        const showEasyCharacters = allFilters.filterDifficultyEasy(filtersCharacters, 5, buttonController); 
+        showCharacters(showEasyCharacters)
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }
 })
@@ -417,13 +418,14 @@ document.getElementById("hard").addEventListener("click", function(){
     document.getElementById("hard-img").style.padding = "0px 0px 0px 20px"
     document.getElementById("img-select").style.padding = "5px 0px"
 
-    if(filtersCharacters !== allCharacters){
+    if(filtersCharacters == allCharacters){
         const showHardCharacters = allFilters.filterDifficultyHard(filtersCharacters, 6);
     showCharacters(showHardCharacters)
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }else{
+        const showHardCharacters = allFilters.filterDifficultyHard(filtersCharacters, 6);
+        showCharacters(showHardCharacters)
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
-    showCharacters(allCharacters)
     }
 })
 
