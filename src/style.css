@@ -104,7 +104,7 @@ nav ul li{
 }
 #div-filters{
     margin: 50px 0px 0px 0px;
-    padding: 20px 0px 20px 30px;
+    padding: 20px 0px 20px 10px;
     background-color: #16171a;
     display: flex;
     align-items: center;
@@ -135,13 +135,16 @@ nav ul li{
 .icons{
     cursor: pointer;
     width: 8%;
-    padding: 16px;
+    padding: 14px;
 }
 #Assassin{
     width: 10.2%;
 }
 #Marksman{
     width: 8.7%;
+}
+#All{
+    width: 10.1%;
 }
 #div-difficulty{
     height: 50px;
@@ -179,7 +182,7 @@ nav ul li{
     justify-content: center;
     cursor: pointer;
     height: 40px;
-    width: 12.6%;
+    width: 12.2%;
     background: #1e2328;
     font-family: 'Marcellus SC', serif;
     font-size: 14px;
@@ -196,19 +199,17 @@ nav ul li{
 }
 #easy{
     position: absolute;
+    align-items: center;
+    justify-content: center;
     margin: 40px 0px;
-    padding: 0px 10px;
-    z-index: 1;
-}
-#medium{
-    position: absolute;
-    margin: 80px 0px;
     padding: 0px 10px;
     z-index: 1;
 }
 #hard{
     position: absolute;
-    margin: 120px 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0px;
     padding: 0px 10px;
     z-index: 1;
 }
@@ -220,13 +221,13 @@ nav ul li{
 #order-selector{
     display: flex;
     flex-direction: column;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 10px 0px 30px;
     width: 8%;
 }
 .orders{
     cursor: pointer;
-    width: 70%;
-    padding: 3px;
+    width: 79.8%;
+    padding: 0px;
     background: #1e2328;
     font-family: 'Marcellus SC', serif;
     font-size: 15px;
@@ -237,7 +238,7 @@ nav ul li{
     padding: 3px;
     cursor: pointer;
     background: #1e2328;
-    width: 70%;
+    width: 80%;
     font-size: 15px;
     color: #cdbe91;
     box-shadow: inset 0 0 2px #000000;
@@ -262,8 +263,8 @@ button{
 }
 #Z-A{
     position: absolute;
-    margin: 25px 0px;
-    width: 4.7%;
+    margin: 19px 0px;
+    width: 5.2%;
     justify-content: center;
 }
 #img-select1{
@@ -277,8 +278,7 @@ button{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px 0px 100px 0px;
-    
+    padding: 0px 0px 70px 0px;
 }
 .cards{
     display: flex;
@@ -356,7 +356,6 @@ p{
 h3{
     font-size: 25px;
     margin: 0px 20px 10px 20px;
-    padding: 0px 10px;
     color: #ffffff;
     border-radius: 5px;
     font-family: Nova Cut;

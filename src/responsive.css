@@ -80,12 +80,8 @@ header{
     margin: 40px 20px;
     z-index: 1;
 }
-#medium{
-    margin: 80px 20px;
-    z-index: 1;
-}
 #hard{
-    margin: 120px 20px;
+    margin: 80px 20px;
     z-index: 1;
 }
 .order{
@@ -116,13 +112,16 @@ header{
 .icons-responsivo{
     display: flex;
     width: 10%;
-    padding: 20px;
+    padding: 19px;
 }
 #slayer1{
     width: 12.8%;
 }
 #marksman1{
     width: 11%;
+}
+#all1{
+    width: 12.8%;
 }
 .container{
     padding: 70px 0px 0px 0px;
