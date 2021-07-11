@@ -34,18 +34,19 @@ divGo.setAttribute("id", "div-go");
 divMenu.appendChild(divGo)
 const pMenu = document.createElement("p");
 pMenu.setAttribute("id", "p-menu");
-pMenu.innerHTML = `BUSQUE<br> POR UM CAMPEÃO`
+pMenu.innerHTML = `BUSQUE<br> POR UM<br> CAMPEÃO`
 divGo.appendChild(pMenu)
-const buttonMenu = document.createElement("button");
-buttonMenu.setAttribute("id", "button-menu");
-buttonMenu.innerHTML = `<a href="#root" id="a-menu">CAMPEÕES</a>`
-divGo.appendChild(buttonMenu);
+const aMenu = document.createElement("a");
+aMenu.setAttribute("id", "a-menu")
+aMenu.setAttribute("href", "#root")
+aMenu.innerHTML = `↓`
+divGo.appendChild(aMenu)
 const divImgMenu = document.createElement("div");
 divImgMenu.setAttribute("id", "div-img-menu");
 divGo.appendChild(divImgMenu)
 const imgMenu = document.createElement("img");
-imgMenu.setAttribute("id", "menu-img-character")
-imgMenu.setAttribute("src", "img/character.png")
+imgMenu.setAttribute("id", "menu-img-character");
+imgMenu.setAttribute("src", "img/character.png");
 divImgMenu.appendChild(imgMenu)
 
 // SECTION DOS FILTROS
@@ -299,7 +300,6 @@ showCharacters(allCharacters);
 
 // FUNÇÃO PRA FILTRAR CATEGORIAS
 let filtersCharacters = allCharacters
-
 const buttonController = document.getElementById("Support");
 buttonController.addEventListener("click", function(){
     filtersCharacters = allFilters.filterTag(allCharacters,"Support")
@@ -317,7 +317,8 @@ buttonTank.addEventListener("click", function(){
 });
 const buttonAll = document.getElementById("All");
 buttonAll.addEventListener("click", function(){
-    showCharacters(allCharacters)
+    filtersCharacters = allCharacters
+    showCharacters(filtersCharacters)
 });
 const buttonMarksman = document.getElementById("Marksman");
 buttonMarksman.addEventListener("click", function(){
@@ -353,7 +354,7 @@ buttonTank1.addEventListener("click", function(){
 });
 const buttonAll1 = document.getElementById("all1");
 buttonAll1.addEventListener("click", function(){
-    showCharacters(allCharacters)
+    showCharacters(filtersCharacters)
 });
 const buttonMarksman1 = document.getElementById("marksman1");
 buttonMarksman1.addEventListener("click", function(){
@@ -384,7 +385,7 @@ document.getElementById("all").addEventListener("click", function (){
         showCharacters(filtersCharacters);
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }else{
-        showCharacters(filtersCharacters);
+        showCharacters(allCharacters);
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }
 })
@@ -398,12 +399,12 @@ document.getElementById("easy").addEventListener("click", function(){
     document.getElementById("easy-img").style.padding = "0px 0px 0px 20px"
     document.getElementById("img-select").style.padding = "5px 0px"
     
-    if(filtersCharacters == allCharacters){
+    if(filtersCharacters !== allCharacters){
         const showEasyCharacters = allFilters.filterDifficultyEasy(filtersCharacters, 5, buttonController);    
         showCharacters(showEasyCharacters)
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }else{   
-        const showEasyCharacters = allFilters.filterDifficultyEasy(filtersCharacters, 5, buttonController); 
+        const showEasyCharacters = allFilters.filterDifficultyEasy(allCharacters, 5, buttonController); 
         showCharacters(showEasyCharacters)
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }
@@ -418,12 +419,12 @@ document.getElementById("hard").addEventListener("click", function(){
     document.getElementById("hard-img").style.padding = "0px 0px 0px 20px"
     document.getElementById("img-select").style.padding = "5px 0px"
 
-    if(filtersCharacters == allCharacters){
+    if(filtersCharacters !== allCharacters){
         const showHardCharacters = allFilters.filterDifficultyHard(filtersCharacters, 6);
     showCharacters(showHardCharacters)
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }else{
-        const showHardCharacters = allFilters.filterDifficultyHard(filtersCharacters, 6);
+        const showHardCharacters = allFilters.filterDifficultyHard(allCharacters, 6);
         showCharacters(showHardCharacters)
         document.getElementById("difficulties").innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`
     }

@@ -1,33 +1,39 @@
 const allFilters = {
   searchCharacter: function (data, input){
-    const searchChampion = data.filter(item => item.name.toLowerCase().includes(input))
-    return searchChampion
+    if (data == "" || data == 0 || data == null || input == 0){
+      throw new TypeError("Argumentos inválidos", "data.js");
+    }else{
+    return data.filter(item => item.name.toLowerCase().includes(input));
+    }
   },
   orderAZ: function (data){
-    const resultsAZ = data.sort((a, z) => a.name > z.name ? 1 : -1)
-    return resultsAZ    
+    if (data == "" || data == 0 || data == null) {
+      throw new TypeError("Argumentos inválidos", "data.js");
+    }else{
+    return data.sort((a, z) => a.name > z.name ? 1 : -1);
+    }
   },
   orderZA: function (data){
-    const resultsZA = data.sort((a, z) => a.name < z.name ? 1 : -1)
-    return resultsZA
+    if (data == "" || data == 0 || data == null) {
+      throw new TypeError("Argumentos inválidos", "data.js");
+    }else{
+    return data.sort((a, z) => z.name > a.name ? 1 : -1);
+    }
   },
   filterTag: function (data,tag){
-    const charactersTags = data.filter(function(item){
-     return item.tags.includes(tag);
-    })
-    return charactersTags
+    return data.filter(item => item.tags.includes(tag));
   },
     filterDifficultyEasy: function (data, difficulty){
       const charactersFilter = data.filter(function(champion){
       return champion.info.difficulty <= difficulty;
       })
-      return charactersFilter
+      return charactersFilter;
     },
   filterDifficultyHard: function (data, difficulty){
     const charactersFilter = data.filter(function(champion){
     return champion.info.difficulty >= difficulty;
     })
-    return charactersFilter
+    return charactersFilter;
   }
   }
 
