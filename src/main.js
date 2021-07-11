@@ -39,7 +39,7 @@ divGo.appendChild(pMenu)
 const aMenu = document.createElement("a");
 aMenu.setAttribute("id", "a-menu")
 aMenu.setAttribute("href", "#root")
-aMenu.innerHTML = `🠗`
+aMenu.innerHTML = `↓`
 divGo.appendChild(aMenu)
 const divImgMenu = document.createElement("div");
 divImgMenu.setAttribute("id", "div-img-menu");
