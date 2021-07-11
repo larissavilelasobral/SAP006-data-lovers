@@ -66,7 +66,7 @@ header{
     height: 150px;
 }
 #img-search{
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 20px;
     width: 8%;
 }
 #input-search{
@@ -74,7 +74,7 @@ header{
     flex-direction: row;
     margin: 0px 100px 0px 0px;
     padding: 11px 30px;
-    width: 30%;
+    width: 35%;
     font-size: 24px;
 }
 .icons{
@@ -84,43 +84,44 @@ header{
 #difficulties{
     font-size: 24px;
     padding: 5px;
-    width: 130%;
+    width: 110%;
     height: 100%;
     margin: 0px 0px 0px 20px;
 }
 .difficulties{
     font-size: 18px;
-    height: 40px;
-    width: 18.4%;
+    height: 50px;
+    width: 23.5%;
 }
 #all{
     margin: 0px 20px;
     z-index: 1;
     padding: 5px;
+    font-size: 20px;
 }
 #easy{
-    margin: 40px 20px;
+    margin: 50px 20px;
     z-index: 1;
 }
 #hard{
-    margin: 80px 20px;
+    margin: 100px 20px;
     z-index: 1;
 }
 .order{
     margin: 0px 50px;
     padding: 2px;
-    width: 90%;
+    width: 85%;
     font-size: 20px;
 }
 .orders{
     margin: 0px 50px;
-    width: 92%;
+    width: 86%;
     padding: 3px;
     font-size: 20px;
 }
 #Z-A{
     margin: 30px 50px;
-    width: 6.9%;
+    width: 10.6%;
 }
 #div-img-responsive{
     display: flex;
