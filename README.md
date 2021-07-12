@@ -17,9 +17,9 @@ Iniciamos com o planejamento conjunto pelo Trello após a definição do tema, o
  <p>_Protótipo de Baixa Fidelidade_</p>
 
 A ideia iniciar era fazer uma visualização semelhante a um deck de cartas, lembrando jogos de RPG. 
-<center>
+
 ![Card](https://trello-attachments.s3.amazonaws.com/60d2b43e4036461de87d22aa/640x241/636317bae0825feb99f1e1462d92b626/image.png)
-</center>
+
 <p>_Inspiração para os Cards_</p>
 
 ## 📌Testes de Usabilidade
