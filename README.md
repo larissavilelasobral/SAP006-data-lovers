@@ -14,6 +14,7 @@ A terceira foi pensado em um usuário que busca fazer uma pesquisa mais especifi
 Iniciamos com o planejamento conjunto pelo Trello após a definição do tema, o objetivo da primeira sprint foi focada na parte de estudos, entendimento do projeto e planejamento. Já na segunda sprint o objetivo foi printa os cards de personagens na tela e fazer o primeiro protótipo de baixa fidelidade já com as ideais debatidas durante a primeira sprint. 
 
 ![Protótipo de Baixa Fidelidade](https://i.ibb.co/7t4r3Cg/image-2-3.jpg)
+
 _Protótipo de Baixa Fidelidade_
 
 A ideia iniciar era fazer uma visualização semelhante a um deck de cartas, lembrando jogos de RPG. 
