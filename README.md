@@ -14,13 +14,13 @@ A terceira foi pensado em um usuário que busca fazer uma pesquisa mais especifi
 Iniciamos com o planejamento conjunto pelo Trello após a definição do tema, o objetivo da primeira sprint foi focada na parte de estudos, entendimento do projeto e planejamento. Já na segunda sprint o objetivo foi printa os cards de personagens na tela e fazer o primeiro protótipo de baixa fidelidade já com as ideais debatidas durante a primeira sprint. 
 
 ![Protótipo de Baixa Fidelidade](https://i.ibb.co/7t4r3Cg/image-2-3.jpg)
- <p>_Protótipo de Baixa Fidelidade_</p>
+_Protótipo de Baixa Fidelidade_
 
 A ideia iniciar era fazer uma visualização semelhante a um deck de cartas, lembrando jogos de RPG. 
 
-![Card](https://trello-attachments.s3.amazonaws.com/60d2b43e4036461de87d22aa/640x241/636317bae0825feb99f1e1462d92b626/image.png)
+![Card](https://i.ibb.co/rp493x8/image-3.png)
 
-<p>_Inspiração para os Cards_</p>
+_Inspiração para os Cards_
 
 ## 📌Testes de Usabilidade
 Os testes de usabilidade foram realizados com jogadores e também com estudantes da turma front end do Laboratoria, através de um formulário foi possível verificar quais as dificuldades encontradas e também receber o feedback de cada usuário. Como o site já estava na fase final foi possível testar todos as funcionalidades como os filtros de categoria, ordenar, dificuldade e também foi possível testar a responsividade do site.
