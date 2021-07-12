@@ -88,11 +88,11 @@ header{
 }
 #img-select{
     width: 8%;
-    padding: 10px 0px 0px 20px;
+    padding: 10px 0px 0px 15px;
 }
 #img-up{
     width: 8%;
-    padding: 10px 0px 0px 20px;
+    padding: 10px 0px 0px 15px;
 }
 #dif-ord{
     width: 100%;
@@ -118,7 +118,7 @@ header{
     margin: 0px 45px;
     z-index: 1;
     padding: 5px;
-    font-size: 35px;
+    font-size: 30px;
     height: 6%;
 }
 #easy{
@@ -127,12 +127,12 @@ header{
     height: 6%;
 }
 #hard{
-    margin: 170px 45px;
+    margin: 172px 45px;
     z-index: 1;
     height: 6%;
 }
 #order-selector{
-    margin: 10px 80px 0px 140px;
+    margin: 10px 80px 0px 10px;
     width: 150%;
     padding: 0px;
 }
@@ -140,7 +140,7 @@ header{
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin: 0px 70px;
+    margin: 0px 100px;
     width: 57%;
     height: 150%;
     font-size: 40px;
@@ -149,7 +149,7 @@ header{
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin: 0px 70px;
+    margin: 0px 100px;
     width: 57%;
     height: 150%;
     font-size: 37px;
@@ -158,13 +158,13 @@ header{
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin: 0px 70px;
-    width: 18.8%;
+    margin: 0px 100px;
+    width: 26.4%;
     height: 6.3%;
     font-size: 37px;
 }
 #img-select1{
-    width: 15%;
+    width: 11%;
 }
 #div-img-responsive{
     display: flex;
