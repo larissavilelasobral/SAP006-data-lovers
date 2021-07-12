@@ -58,15 +58,17 @@ divFilters.setAttribute("id", "div-filters");
 filters.appendChild(divFilters);
 
 // PARTE PROCURAR PERSONAGEM
+const divSearch = document.createElement("div");
+divSearch.setAttribute("id", "div-search");
+divFilters.appendChild(divSearch);
 const imgSearch = document.createElement("img");
 imgSearch.setAttribute("src", "img/search.png");
 imgSearch.setAttribute("id", "img-search");
-divFilters.appendChild(imgSearch);
+divSearch.appendChild(imgSearch);
 const inputSearch = document.createElement("input");
 inputSearch.setAttribute("id", "input-search");
 inputSearch.setAttribute("placeholder", "Digite o nome do campeão...");
-divFilters.appendChild(inputSearch);
-
+divSearch.appendChild(inputSearch);
 // PARTE DA CATEGORIAS WEB
 const divCategories = document.createElement("div");
 divCategories.setAttribute("id", "categories");
@@ -107,10 +109,13 @@ imgFighter.setAttribute("id", "Fighter");
 imgFighter.setAttribute("src", "img/fighter.png");
 divCategories.appendChild(imgFighter);
 
+const divDifOrd = document.createElement("div");
+divDifOrd.setAttribute("id", "dif-ord");
+divFilters.appendChild(divDifOrd);
 // PARTE DAS DIFICULDADES
 const divDifficulty = document.createElement("div");
 divDifficulty.setAttribute("id", "div-difficulty");
-divFilters.appendChild(divDifficulty);
+divDifOrd.appendChild(divDifficulty);
 const selectDifficulty = document.createElement("button");
 selectDifficulty.setAttribute("id", "difficulties");
 selectDifficulty.innerHTML = `Dificuldades <img id="img-select" src="img/select.png"/>`;
@@ -171,7 +176,7 @@ document.getElementById("difficulties").addEventListener("click", function(){
 // PARTE DE ORDENAR
 const orderSelector = document.createElement("div");
 orderSelector.setAttribute("id", "order-selector");
-divFilters.appendChild(orderSelector);
+divDifOrd.appendChild(orderSelector);
 const ordenar = document.createElement("button");
 ordenar.setAttribute("id", "ordenar");
 ordenar.setAttribute("class", "order");
