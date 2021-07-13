@@ -1,7 +1,8 @@
 # League of Legends Champions
 Aplicação pensada para facilitar a vida dos jogadores na procura de mais informações sobre os seus campeões favoritos do League of Legends, onde é possível visualizar, ordenar e categorizar todos os personagens presentes no jogo eletrônico online gratuito League of Legends (abreviado como LoL), desenvolvido e publicado pela Riot Games em 2009.
 
-![Imagem do Projeto](https://i.ibb.co/BntvC6S/capa.jpg)
+![Imagem do Projeto](https://trello-attachments.s3.amazonaws.com/60ca3909ebf7f64cf767909b/60eca5a319d08e74ac40f285/eda6497db522c3ff81ea960e50c58133/image.png)
+![Imagem do Projeto](https://trello-attachments.s3.amazonaws.com/60ca3909ebf7f64cf767909b/60eca5a319d08e74ac40f285/53bf136ad9331ed146dfbc1b8c994c20/image.png)
 
 ## 🚀 Histórias de Usuário
 A primeira historia de usuário foi pensada em um usuário que busca informações sobre os seus campões favoritos, seguindo essa linha foram criados os Cards onde é possível verificar as informações de cada personagem e posteriormente foi adicionado o verso do card para adicionar informações extra como o nível de ataque, defesa, magia e dificuldade.   
@@ -21,15 +22,18 @@ A ideia iniciar era fazer uma visualização semelhante a um deck de cartas, lem
 
 ![Card](https://i.ibb.co/rp493x8/image-3.png)
 
-_Inspiração para os Cards_
+_Inspiração para os cards_
+
+![Cards](https://trello-attachments.s3.amazonaws.com/60eca5a319d08e74ac40f285/450x377/0741ffb99720fdab3a6f48a82b5ac393/image_%281%29.png)
+
 
 ## 📌Testes de Usabilidade
 Os testes de usabilidade foram realizados com jogadores e também com estudantes da turma front end do Laboratoria, através de um formulário foi possível verificar quais as dificuldades encontradas e também receber o feedback de cada usuário. Como o site já estava na fase final foi possível testar todos as funcionalidades como os filtros de categoria, ordenar, dificuldade e também foi possível testar a responsividade do site.
 
 __lista de problemas detectados nos testes de usabilidade__
-- Não ter todos os personagens do jogo[ API desatualizada ].
-- Botões dropdown pequenos na versão mobile[ corrigido ].
-- Informações dos personagens saindo do Card na versão mobile[ corrigido ].
+- Não ter todos os personagens do jogo [ API desatualizada ].
+- Botões dropdown pequenos na versão mobile [ corrigido ].
+- Informações dos personagens saindo do card na versão mobile [ corrigido ].
 
 ## ✒️ Autores
 * [Larissa Siqueira](https://github.com/LarissaSiq)
