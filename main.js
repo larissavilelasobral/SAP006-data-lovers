@@ -7,7 +7,6 @@ let allCharacters = Object.values(elements);
 const index = document.getElementById("index");
 const header = document.querySelector("header");
 
-// CABEÇALHO
 const nav = document.createElement("nav");
 header.appendChild(nav);
 const ul = document.createElement("ul");
@@ -22,7 +21,6 @@ imgLogo.setAttribute("src", "img/logo.png");
 imgLogo.setAttribute("id", "img-logo");
 a.appendChild(imgLogo);
 
-// MENU
 const menu = document.createElement("section");
 menu.setAttribute("id", "menu");
 index.appendChild(menu);
@@ -49,7 +47,6 @@ imgMenu.setAttribute("id", "menu-img-character");
 imgMenu.setAttribute("src", "img/character.png");
 divImgMenu.appendChild(imgMenu);
 
-// SECTION DOS FILTROS
 const filters = document.createElement("section");
 filters.setAttribute("id", "filters");
 index.appendChild(filters);
@@ -57,7 +54,6 @@ const divFilters = document.createElement("div");
 divFilters.setAttribute("id", "div-filters");
 filters.appendChild(divFilters);
 
-// PARTE PROCURAR PERSONAGEM
 const divSearch = document.createElement("div");
 divSearch.setAttribute("id", "div-search");
 divFilters.appendChild(divSearch);
@@ -69,7 +65,7 @@ const inputSearch = document.createElement("input");
 inputSearch.setAttribute("id", "input-search");
 inputSearch.setAttribute("placeholder", "Digite o nome do campeão...");
 divSearch.appendChild(inputSearch);
-// PARTE DA CATEGORIAS WEB
+
 const divCategories = document.createElement("div");
 divCategories.setAttribute("id", "categories");
 divFilters.appendChild(divCategories);
@@ -112,7 +108,7 @@ divCategories.appendChild(imgFighter);
 const divDifOrd = document.createElement("div");
 divDifOrd.setAttribute("id", "dif-ord");
 divFilters.appendChild(divDifOrd);
-// PARTE DAS DIFICULDADES
+
 const divDifficulty = document.createElement("div");
 divDifficulty.setAttribute("id", "div-difficulty");
 divDifOrd.appendChild(divDifficulty);
@@ -173,7 +169,6 @@ document.getElementById("difficulties").addEventListener("click", function(){
     }
  })
 
-// PARTE DE ORDENAR
 const orderSelector = document.createElement("div");
 orderSelector.setAttribute("id", "order-selector");
 divDifOrd.appendChild(orderSelector);
@@ -210,7 +205,6 @@ document.getElementById("ordenar").addEventListener("click", function(){
     }
 })
 
-// PARTE CATEGORIAS RESPONSIVO
 const divImgResponsive = document.createElement("div");
 divImgResponsive.setAttribute("id", "div-img-responsive");
 index.appendChild(divImgResponsive);
@@ -250,7 +244,6 @@ imgFighter1.setAttribute("id", "fighter1");
 imgFighter1.setAttribute("src", "img/fighter.png");
 divImgResponsive.appendChild(imgFighter1);
 
-// FOOTER
 const footer = document.querySelector("footer");
 const pFooter = document.createElement("p");
 pFooter.setAttribute("id", "p-footer");
@@ -259,7 +252,6 @@ target="blank">Larissa Siqueira</a> e <a href="https://github.com/larissavilelas
 target="new">Larissa Vilela</a></p>`;
 footer.appendChild(pFooter);
 
-// FUNÇÃO QUE MOSTRA PERSONAGENS NA TELA
 function showCharacters(allCharacters) {
     const divContainer = document.getElementById("root");
     divContainer.setAttribute("class", "container");
@@ -303,7 +295,6 @@ function showCharacters(allCharacters) {
 }
 showCharacters(allCharacters);
 
-// FUNÇÃO PRA FILTRAR CATEGORIAS
 let filtersCharacters = allCharacters;
 const buttonController = document.getElementById("Support");
 buttonController.addEventListener("click", function(){
@@ -341,7 +332,6 @@ buttonFighter.addEventListener("click", function(){
     showCharacters(filtersCharacters);
 });
 
-// FUNÇÃO PARA FILTRAR CATEGORIAS NO RESPONSIVO
 const buttonController1 = document.getElementById("controller1");
 buttonController1.addEventListener("click", function(){
     filtersCharacters = allFilters.filterTag(allCharacters,"Support");
@@ -378,7 +368,6 @@ buttonFighter1.addEventListener("click", function(){
     showCharacters(filtersCharacters);
 });
 
-// FUNÇÃO PRA MUDAR DIFICULDADES
 document.getElementById("all").addEventListener("click", function (){
     document.getElementById("difficulties").innerHTML = `Todas as Dificuldades <img id="img-select" src="img/select.png"/>`;
     document.getElementById("all").style.display = "none";
@@ -436,7 +425,6 @@ document.getElementById("hard").addEventListener("click", function(){
     }
 })
 
-// FUNÇÃO PRA ORDENAR ALFABETICAMENTE
 document.getElementById("A-Z").addEventListener("click", function(){
     document.getElementById("ordenar").style.display = "flex";
     document.getElementById("ordenar").innerHTML = `A-Z <img id="img-select1" src="img/select.png"/>`;
@@ -460,7 +448,6 @@ document.getElementById("Z-A").addEventListener("click", function(){
     showCharacters(orderChampionsZA);
 })
 
-// FUNÇÃO PRA PESQUISAR PERSONAGEM POR NOME
 document.getElementById("input-search").addEventListener("input", function () {
 
     if(filtersCharacters !== allCharacters){
