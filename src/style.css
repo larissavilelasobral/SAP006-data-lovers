@@ -200,11 +200,10 @@ nav ul li{
 }
 .difficulties{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     cursor: pointer;
     height: 40px;
-    width: 13.5%;
+    width: 12.1em;
     background: #1e2328;
     font-family: 'Marcellus SC', serif;
     font-size: 14px;
@@ -284,7 +283,7 @@ button{
 #Z-A{
     position: absolute;
     margin: 0px 0px;
-    width: 5.1%;
+    width: 4.6em;
     justify-content: center;
 }
 #img-select1{
